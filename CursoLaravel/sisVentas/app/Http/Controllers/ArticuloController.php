@@ -16,7 +16,7 @@ class ArticuloController extends Controller
     //Metodos y funciones del controlador articulos
     public function __construct()
     {
-
+        $this->middleware('auth');
     }
     public function index(Request $request)
     {
